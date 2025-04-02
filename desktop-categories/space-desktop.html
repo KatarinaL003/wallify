@@ -14,6 +14,8 @@
             <img class="pozadina" src="../slike/pozadina.jpg">
         </div>
 
+        <div id="go-up"></div>
+
         <div class="div1 animate__animated" id="go-up">
             <div class="pozicija0">
                 <a href="../wallify.html#logo"><img class="logo animate__animated animate__fadeInLeft" src="../slike/logo.png"></a>
@@ -98,7 +100,7 @@
 
         <div class="dugme">
             <div class="poz-dugme">
-                <a href="#go-up"><button class="go-up">Go back up</button></a>
+                <a href="#go-up"><button class="go-up" id="scrollToTop">Go back up</button></a>
             </div>
         </div>
 
@@ -108,5 +110,13 @@
             </div>
         </div>
 
+        <script>
+            document.getElementById("scrollToTop").addEventListener("click", function(){
+                window.scrollTo({
+                    top:0,
+                    behavior:"smooth"
+                });
+            });
+        </script>
     </body>
 </html>
