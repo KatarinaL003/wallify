@@ -27,7 +27,7 @@
                 <a href="desktop-categories.html"><button class="desktop animate__animated animate__fadeInLeft">DESKTOP</button></a>
                 <a href="phone-categories.html"><button class="phone animate__animated animate__fadeInLeft">PHONE</button></a>
                 <a href="#contact"><button class="contact animate__animated animate__fadeInLeft">CONTACT</button></a>
-                <input class="search animate__animated animate__fadeInLeft" type="text" placeholder="SEARCH">
+                <input class="search animate__animated animate__fadeInLeft" type="text" placeholder="SEARCH" id="searchInput">
             </div>
         </div>
 
@@ -158,6 +158,22 @@
             scroll("scrollToTop");
             scroll("scrollToHome");
             scroll("scrollToLogo");
+
+            document.getElementById("searchInput").addEventListener("keydown", function(event){
+                if(event.key === "Enter"){
+                    search();
+                }
+            });
+            
+            function search(){
+            
+                let query = document.getElementById("searchInput").value.trim().toLowerCase();
+
+                if(query){
+                    let formattedQuery = query.replace(/\s+/g, "-");
+                    window.location.href = `/desktop-categories/${formattedQuery}-desktop.html`;
+                }
+            }
     
         </script>
 
