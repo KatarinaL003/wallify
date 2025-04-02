@@ -153,27 +153,12 @@
             </div>
         </div>
 
-        <script>
-            document.getElementById("scrollToTop").addEventListener("click", function(){
-                window.scrollTo({
-                    top:0,
-                    behavior: "smooth"
-                });
-            });
-
-            document.getElementById("scrollToHome").addEventListener("click", function(){
-                window.scrollTo({
-                    top:0,
-                    behavior:"smooth"
-                });
-            });
-
-            document.getElementById("scrollToLogo").addEventListener("click", function(){
-                window.scrollTo({
-                    top:0,
-                    behavior:"smooth"
-                });
-            });
+        <script src="scripts.js">
+            
+            scroll("scrollToTop");
+            scroll("scrollToHome");
+            scroll("scrollToLogo");
+    
         </script>
 
     </body>
