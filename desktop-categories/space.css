@@ -621,3 +621,27 @@ input::placeholder{
     color: white;
     font-size: 20px;
 }
+
+@media screen and (max-width:768px){
+    .poz-slika1, .poz-slika2, .poz-slika3,
+    .poz-slika5, .poz-slika6, .poz-slika7, 
+    .poz-slika8, .poz-slika9, .poz-slika10,
+    .poz-slika11, .poz-slika12, .poz-slika13,
+    .poz-slika14, .poz-slika15, .poz-slika16{
+        width: 430px;
+        height: 280px;
+        background-color: rgba(117, 37, 15, 0.961);
+        flex-basis: 350px;
+    }
+
+    .slika1, .slika2, .slika3,
+    .slika5, .slika6, .slika7,
+    .slika8, .slika9, .slika10,
+    .slika11, .slika12, .slika13,
+    .slika14, .slika15, .slika16{
+        height: 280px;
+        width: 430px;
+        cursor: pointer;
+        transition: transform 0.4s;
+    }
+}
